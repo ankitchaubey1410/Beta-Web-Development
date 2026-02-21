@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FORMS TO FILL DETAILS OF USERS</h1>
+    <form action="post">
+        <div>
+            <label for="username">ENTER YOUR USERNAME:</label>
+            <input type="text" id="username" name="username" placeholder="ENTER YOUR USERNAME">
+        </div>
+        <div>
+            <label for="rollno">ENTER YOUR ROLL NUMBER:</label>
+            <input type="text" id="rollno" name="rollno" placeholder="ENTER YOUR ROLL NO.">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="metahuman" name="gender" value="metahuman">
+            <label for="metahuman">Metahuman</label>
+        </div>
+        <div>
+            <label for="country">Select your country:</label>
+            <select name="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Japan">Japan</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
