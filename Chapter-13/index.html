@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Box Model - Margin, Padding & Borders</title>
     <style>
+        body{
+            background-color: #b36bb5;
+        }
+
         *{
             margin: 0;
             padding: 0;
@@ -13,9 +17,31 @@
         .box{
             background-color: aqua;
         }
+        .box1{
+            color: royalblue;
+            padding: 10px;
+            /* margin: 25px; */
+            margin: 35px;
+            border: 2px  solid purple;
+            height: 200px;
+            box-sizing: border-box;
+            /* box sizing is used to include the padding and border in the total width and height of the element, so that the element will not exceed the specified width and height. */
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px  solid crimson;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* Margin collapse: When two vertical margins of adjacent elements meet, they collapse into a single margin that is equal to the larger of the two margins. This can lead to unexpected spacing between elements. */
+
     </style>
 </head>
 <body>
-    <div class="box">I am a box</div>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
 </body>
 </html>
