@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+        /* in same selector , the last ones will overwrite the others */
+
+        .cred {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Specificity Hierarchy - Inline Style > ID Selector > Class/Attribute/Pseudo-class > Element Selector > Universal Selector -->
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
