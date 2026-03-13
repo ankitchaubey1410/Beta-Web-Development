@@ -21,17 +21,23 @@
         .cred {
             color: red;
         }
-        /* The specificity of this selector is 10 */
-        .yellow {
+        /* The specificity of this selector is 1 + 10 = 11 , element + class */
+        h1.yellow {
             color: yellow;
-            color: blue !important;
+            /* color: blue !important; */
             /* !important can overwrite incline css */
         }
+
         /* This is an example of attribute selector . The specificity of this selector is 10 */
-        /* [data-x=a]{
-            background-color: rebeccapurple;
-        } */
+        [data-x=a]{
+            /* background-color: rebeccapurple; */
+            color: rebeccapurple;
+        }
         
+        /* The specificity of this selector is 1 + 10 + 10 +10 + 10 = 41 , element + class + class + attribute + pseudo */
+        a.harryclass.rohan-class[href]:hover {
+            color: orchid;
+        }
     </style>
 </head>
 
