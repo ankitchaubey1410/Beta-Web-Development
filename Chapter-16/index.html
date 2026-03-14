@@ -29,23 +29,38 @@
             box-sizing: border-box;
             border: 2px solid black;
             width: 80vw;
-            height: 80vh;
+            /* height: 80vh; */
+            min-height: 80vh;
             margin: 23px auto;
             /* font-size: 18px; */
             background-color: aquamarine;
         }
-        .container p{
+        /* .container p{ */
+        .container > div{
             font-size: 2rem;
             /* rem multiplies with the root element font size  */
             /* font-size: 2em; */
             /* em multiplies with the inherits font size  */
+            border: 2px solid rebeccapurple;
+            width: 50%;
+            /* it writes only in 50% area in box or parent  */
+        }
+
+        /* .container p div{ */
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
         }
 
         .mycont{
-            background-color: rebeccapurple;
-            color: yellow;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            /* background-color: rebeccapurple; */
+            color: rgb(0, 0, 0);
             font-size: 22px;
-            width: 100vmin;
+            /* width: 100vmin; */
+            width: 80vw;
         }
     </style>
 </head>
@@ -54,9 +69,17 @@
         This is a box
     </div>
     <div class="container">
-        <p>
+        <!-- <p> -->
+        <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, consequatur sint temporibus suscipit voluptatum repudiandae neque dolore error corporis, alias natus et, illum recusandae ullam laudantium quasi repellendus similique fugiat dolores eos reprehenderit? Officiis eos labore modi sequi deleniti molestiae voluptatum, quam quo porro recusandae asperiores. Reprehenderit ratione atque expedita veritatis minima iste quos corrupti libero.
-        </p>
+        
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, minima ad veritatis repellendus libero, eligendi ipsa eius perspiciatis quae vitae, accusamus perferendis nemo!
+        </div>
+        </div>
+        <!-- </p> -->
+
+        <!-- Expand this to see that this container will adjust its height lorem12233 -->
     </div>
     <div class="mycont">
         I am another container
