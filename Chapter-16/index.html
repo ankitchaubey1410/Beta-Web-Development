@@ -4,24 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Sizing Units</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units -->
     <style>
         *{
             margin: 0;
-            padding: 0;
+            padding: 0; 
+        }
+
+        html{
+            font-size: 12px;
         }
 
         .box{
             box-sizing: border-box;
             border: 2px solid black;
             /* width: 2048px; */
-            width: 100vw;
+            width: 80vw;
+            height: 10vh;
+            /* viewport unit */
+            margin: auto;   
             background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            /* font-size: 18px; */
+            background-color: aquamarine;
+        }
+        .container p{
+            font-size: 2rem;
+            /* rem multiplies with the root element font size  */
+            /* font-size: 2em; */
+            /* em multiplies with the inherits font size  */
+        }
+
+        .mycont{
+            background-color: rebeccapurple;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
         }
     </style>
 </head>
 <body>
     <div class="box">
         This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, consequatur sint temporibus suscipit voluptatum repudiandae neque dolore error corporis, alias natus et, illum recusandae ullam laudantium quasi repellendus similique fugiat dolores eos reprehenderit? Officiis eos labore modi sequi deleniti molestiae voluptatum, quam quo porro recusandae asperiores. Reprehenderit ratione atque expedita veritatis minima iste quos corrupti libero.
+        </p>
+    </div>
+    <div class="mycont">
+        I am another container
     </div>
 </body>
 </html>
