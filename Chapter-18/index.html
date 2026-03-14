@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 10px #03a87f;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+        }
+
+        .text-element{
+            text-shadow: 10px 5px 4px #810362;
+            /* text-shadow: h-offset v-offset blur color; */
+            outline: 2px solid blue;
+            border: 2px solid yellow;
+            outline-offset: 44px;
+            /* outline can be change directly unlike border using padding and marging  */
+            border-radius: 30px;
+            /* outline cannot be curve directly but it follows border to curve also you cant change width of outline */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate itaque dolor alias dicta quia corrupti? Ad culpa repudiandae odit at eos corrupti, quis sint vel eaque illum voluptatem accusamus officia, ratione quasi.</p>
+</body>
+</html>
