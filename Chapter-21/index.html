@@ -25,10 +25,18 @@
             /* z-index: 1; */
             /* it is used to overwrite something */
             
-            /* position: absolute; */
-            /* top: 0px; */
-            /* left: -30px; */
+            position: absolute;
+            top: 0px;
+            left: 3px;
             /* in this element is placed relatively to its nearest positioned ancestor , .parent{} -> <body> -> <!DOCTYPE html> */
+
+            /* position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+            /* it is a special position property which do both work of static and fixed */
         }
         .box2{
             background-color: orangered;
@@ -40,19 +48,30 @@
         }
         .box3{
             background-color:darkseagreen;
-            position: fixed;
+            /* position: fixed;
             bottom: 0px;
             left: 8vw;
-            height: 113px;
+            height: 113px; */
+            /* it used for fixing something on specific position which cannot be alter by others */
+
+            /* position: static; */
+            /* it make sure that position of element is in default and nothing can affect it */
+            /* top: 40px; */
+            /*it doesnt effect on position because of static*/
         }
         .box4{
             background-color: crimson;
         }
         .parent{
+            /* transform, filter, or perspective properties can also 
+            make an element appear as positioned */
             margin: 43px;
             padding: 34px;
             border: 3px solid purple;
-            /* position: absolute; */
+            /* position: fixed; */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
         }
     </style>
 </head> 
