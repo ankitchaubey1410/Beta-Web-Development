@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* everything inside root is a global variable it is used all over the program */
+        :root{
+            --color: rgb(224, 41, 215);
+            --seccolor: rgb(146, 19, 135);
+            --defpad: 23px;
+            --defopa: 0.3;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: rgb(56, 151, 56); */
+            background-color: var(--color);
+        }
+        .container{
+            /* background-color: rgb(5, 165, 117); */
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            /* padding: 34px; */
+            padding: var(--defpad);
+            /* opacity: 0.3; */
+            opacity: var(--defopa);
+            border: 2px solid var(--color2,rgb(226, 14, 85));
+        }
+        /* this is a local variable */
+        ul li:first-child{
+            --color: rgb(5, 185, 131);
+            background-color: var(--color);
+        }
+        ul li:nth-child(2){
+            background-color: var(--color1,pink);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam ratione ipsa odio praesentium molestias porro maiores mollitia reiciendis dolor consectetur, quisquam inventore perspiciatis voluptates necessitatibus unde vero quasi repellat ea quas quo obcaecati cumque? Voluptates quisquam suscipit omnis. Eveniet, natus repellat. Nam, nisi? Quis!
+    </div>
+</body>
+</html>
